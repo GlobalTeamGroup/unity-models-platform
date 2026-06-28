@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Unity Models Platform | ИИ-Агентство</title>
+  <meta name="description" content="Unity Models Platform - Современное модельное агентство на базе ИИ-ассистента Oscar.">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Cinematic Background -->
+  <canvas id="gl-canvas"></canvas>
+  <div class="grain-overlay"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-content">
+      <div class="nav-logo">
+        <img src="images/logo.png" alt="Unity Models Platform" class="logo-img">
+        <span class="logo-text">UNITY MODELS</span>
+      </div>
+      <div class="nav-links desktop-only">
+        <a href="#hero" class="nav-link active">Главная</a>
+        <a href="#services" class="nav-link">Oscar AI</a>
+        <a href="#portfolio" class="nav-link">Направления</a>
+        <a href="#process" class="nav-link">Процесс</a>
+        <a href="#contact" class="nav-link">Контакты</a>
+      </div>
+      <div class="mobile-burger mobile-only" id="burger-menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Mobile Drawer -->
+  <div class="nav-drawer" id="nav-drawer">
+    <a href="#hero" class="drawer-link">Главная</a>
+    <a href="#services" class="drawer-link">Oscar AI</a>
+    <a href="#portfolio" class="drawer-link">Направления</a>
+    <a href="#process" class="drawer-link">Процесс</a>
+    <a href="#contact" class="drawer-link">Контакты</a>
+  </div>
+
+  <!-- Main Scroll Container -->
+  <div id="ui-layer">
+    <div class="stage">
+      
+      <!-- Section 0: Hero -->
+      <section class="page is-active" data-index="0" id="hero">
+        <div class="container hero-container">
+          <div class="reveal-3d">
+            <h1 class="hero-title accent-text">НОВЫЙ УРОВЕНЬ <br> С ИИ</h1>
+          </div>
+          <div class="reveal-3d">
+            <p class="hero-subtitle">Первое модельное агентство на базе интеллектуального кастинга. Позвольте Oscar AI найти ваш следующий крупный проект.</p>
+          </div>
+          <div class="reveal-3d hero-actions">
+            <a href="#services" class="btn btn-primary">Узнать о Oscar AI</a>
+            <a href="#contact" class="btn btn-outline">Присоединиться к нам</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 1: Services (Oscar AI) -->
+      <section class="page" data-index="1" id="services">
+        <div class="container">
+          <div class="reveal-3d">
+            <h2 class="section-title">ЗНАКОМЬТЕСЬ, OSCAR</h2>
+            <p class="section-desc">Первый в индустрии ИИ-ассистент, который ищет для вас кастинги 24/7.</p>
+          </div>
+          
+          <div class="grid-3 cards-grid mt-4">
+            <div class="card card-glass reveal-3d">
+              <div class="card-icon">🧠</div>
+              <h3 class="card-title">Умный подбор</h3>
+              <p class="card-text">Oscar анализирует ваш профиль и автоматически отсеивает неподходящие кастинги, предлагая только идеальные совпадения.</p>
+            </div>
+            <div class="card card-glass reveal-3d">
+              <div class="card-icon">⚡</div>
+              <h3 class="card-title">Мгновенные уведомления</h3>
+              <p class="card-text">Получайте уведомления в Telegram в ту секунду, когда кастинг-директор объявляет набор.</p>
+            </div>
+            <div class="card card-glass reveal-3d">
+              <div class="card-icon">📈</div>
+              <h3 class="card-title">Карьерный рост</h3>
+              <p class="card-text">Сфокусируйтесь на своем таланте, а наша технология займется бесконечным поиском и откликами.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: Portfolio / Divisions -->
+      <section class="page" data-index="2" id="portfolio">
+        <div class="container">
+          <div class="reveal-3d">
+            <h2 class="section-title">НАПРАВЛЕНИЯ</h2>
+            <p class="section-desc">Мы представляем исключительные таланты во всех аспектах мировой модной и коммерческой индустрии.</p>
+          </div>
+          
+          <div class="grid-2 mt-4 portfolio-grid">
+            <div class="card card-glass portfolio-card reveal-3d">
+              <h3 class="card-title accent-text">Высокая мода</h3>
+              <p class="card-text">Таланты для съемок и подиумов самых престижных мировых домов моды.</p>
+            </div>
+            <div class="card card-glass portfolio-card reveal-3d">
+              <h3 class="card-title accent-text">Коммерция</h3>
+              <p class="card-text">Харизматичные лица для глобальных рекламных кампаний брендов и телевидения.</p>
+            </div>
+            <div class="card card-glass portfolio-card reveal-3d">
+              <h3 class="card-title accent-text">Спорт и фитнес</h3>
+              <p class="card-text">Элитные спортсмены и фитнес-модели для спортивных брендов и брендов активной одежды.</p>
+            </div>
+            <div class="card card-glass portfolio-card reveal-3d">
+              <h3 class="card-title accent-text">Диджитал криэйторы</h3>
+              <p class="card-text">Инфлюенсеры и таланты с уже сформированной вовлеченной аудиторией.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Process -->
+      <section class="page" data-index="3" id="process">
+        <div class="container">
+          <div class="reveal-3d">
+            <h2 class="section-title">КАК ЭТО РАБОТАЕТ</h2>
+            <p class="section-desc">Бесшовная интеграция технологий в вашу модельную карьеру.</p>
+          </div>
+          
+          <div class="process-steps mt-4">
+            <div class="step reveal-3d">
+              <div class="step-number accent-text">01</div>
+              <div class="step-content">
+                <h3 class="card-title">Отправка портфолио</h3>
+                <p class="card-text">Подайте заявку в Unity Models Platform с вашим текущим буком и параметрами.</p>
+              </div>
+            </div>
+            <div class="step reveal-3d">
+              <div class="step-number accent-text">02</div>
+              <div class="step-content">
+                <h3 class="card-title">Подключение Telegram</h3>
+                <p class="card-text">Свяжите свой профиль с @casting_assist_bot, чтобы активировать Oscar AI.</p>
+              </div>
+            </div>
+            <div class="step reveal-3d">
+              <div class="step-number accent-text">03</div>
+              <div class="step-content">
+                <h3 class="card-title">Получение проектов</h3>
+                <p class="card-text">Получайте персональные предложения о кастингах прямо на телефон и начинайте работать.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: Contact -->
+      <section class="page" data-index="4" id="contact">
+        <div class="container contact-container">
+          <div class="reveal-3d text-center">
+            <h2 class="section-title">ПРИСОЕДИНЯЙТЕСЬ К БУДУЩЕМУ</h2>
+            <p class="section-desc">Готовы вывести свою карьеру на новый уровень? Подключитесь к Oscar AI и Unity Models Platform сегодня.</p>
+            
+            <div class="contact-actions mt-4">
+              <a href="https://t.me/casting_assist_bot" target="_blank" class="btn btn-primary btn-large">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                Запустить @casting_assist_bot
+              </a>
+              <div class="mt-4">
+                <p class="card-text">Email: talent@unitymodels.ai</p>
+                <p class="card-text">Глобальная штаб-квартира, Digital First</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
